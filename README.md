@@ -1,6 +1,5 @@
 # Wine Quality Prediction: Exploratory Data Analysis and Preprocessing
-
-![Symbiosis Institute of Technology, Nagpur Logo](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/symbiosis_logo.png) This repository contains the Exploratory Data Analysis (EDA) and preprocessing steps for the Wine Quality Dataset. The goal of this project is to prepare the dataset for building robust machine learning models to predict wine quality based on its physicochemical properties.
+This repository contains the Exploratory Data Analysis (EDA) and preprocessing steps for the Wine Quality Dataset. The goal of this project is to prepare the dataset for building robust machine learning models to predict wine quality based on its physicochemical properties.
 
 [cite_start]**Course Name:** Machine Learning [cite: 3]
 [cite_start]**Course Code:** TE7253 [cite: 4]
@@ -93,11 +92,7 @@ This project delves into the Wine Quality dataset, performing detailed Explorato
 * [cite_start]`Alcohol` is approximately normally distributed[cite: 78].
 * [cite_start]Understanding skewness aids in deciding whether to apply transformations like log transformations[cite: 79].
 
-### Box Plots of Numerical Features
 
-[cite_start]Box plots summarized the distribution's spread, median, quartiles, and were particularly useful in identifying outliers[cite: 80, 81].
-
-[cite_start]![Boxplot of volatile acidity](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_volatile_acidity.png) ![Boxplot of fixed acidity](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_fixed_acidity.png) ![Boxplot of citric acid](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_citric_acid.png) ![Boxplot of residual sugar](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_residual_sugar.png) ![Boxplot of chlorides](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_chlorides.png) ![Boxplot of free sulfur dioxide](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_free_sulfur_dioxide.png) ![Boxplot of total sulfur dioxide](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_total_sulfur_dioxide.png) ![Boxplot of density](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_density.png) ![Boxplot of pH](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_ph.png) ![Boxplot of sulphates](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_sulphates.png) ![Boxplot of alcohol](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/boxplot_alcohol.png) *Figure 2: Box Plots of Numerical Features* [cite: 82]
 
 **Observations:**
 * [cite_start]Several features contain outliers, notably `residual sugar`, `free sulfur dioxide`, and `total sulfur dioxide`[cite: 84, 85, 86, 87].
@@ -105,8 +100,6 @@ This project delves into the Wine Quality dataset, performing detailed Explorato
 ### Correlation Matrix Heatmap
 
 [cite_start]A heatmap was generated to visualize the linear relationships between numerical features[cite: 88, 89].
-
-[cite_start]![Feature Correlation Heatmap](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/correlation_heatmap.png) *Figure 3: Feature Correlation Heatmap* [cite: 89]
 
 **Observations:**
 * [cite_start]`Alcohol` demonstrates the strongest positive correlation with `quality`[cite: 91].
@@ -117,7 +110,7 @@ This project delves into the Wine Quality dataset, performing detailed Explorato
 
 [cite_start]A pairplot was generated to visualize relationships between numerical features and their correlation with the target variable `quality`[cite: 94, 95].
 
-[cite_start]![Pairplot](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/images/pairplot.png) *Figure 4: Pairplot* [cite: 96]
+
 
 **Observations:**
 * [cite_start]Higher quality wines tend to have higher `alcohol` content and lower `volatile acidity`[cite: 98].
