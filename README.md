@@ -1,40 +1,58 @@
 Wine Quality Prediction: Exploratory Data Analysis and Preprocessing
 This repository contains the Exploratory Data Analysis (EDA) and preprocessing steps for the Wine Quality Dataset. The goal of this project is to prepare the dataset for building robust machine learning models to predict wine quality based on its physicochemical properties.
 
+
 Course Name: Machine Learning 
+
 
 Course Code: TE7253 
 
-Student: Khushi Dekate 
+
+Student: KHUSHI DEKATE 
+
 
 PRN: 22070521096 
+
 
 Semester: VII SEM 
 
 Table of Contents
+
 Introduction 
+
 
 Dataset Details 
 
+
 Data Loading and Initial Inspection 
+
 
 Data Cleaning and Preprocessing 
 
+
 Data Coverage and Duplicates Verification 
+
 
 One-Hot Encoding 
 
+
 Feature Scaling for Numerical Columns 
+
 
 Exploratory Data Visualizations 
 
+
 Distribution of Features 
+
 
 Box Plots of Numerical Features 
 
+
 Correlation Matrix Heatmap 
 
+
 Pairplot 
+
 
 Conclusion 
 
@@ -44,11 +62,12 @@ This project explores the Wine Quality dataset through detailed EDA and preproce
 
 
 Dataset Details
+
 Dataset Name: Wine Quality Dataset 
 
-Source: 
 
-https://archive.ics.uci.edu/dataset/186/wine+quality 
+Source: https://archive.ics.uci.edu/dataset/186/wine+quality 
+
 
 Target Variable: The primary focus for future modeling is to predict wine quality (a score ranging from 3 to 8), based on its physicochemical properties such as acidity, sugar content, pH, alcohol, and more.
 
@@ -119,14 +138,12 @@ Time/Location Metadata: The dataset does not include columns like Year, Month, o
 One-Hot Encoding
 Since all columns in the dataset are numerical, there is no need for one-hot encoding.
 
-The target column quality is ordinal (integer scores from 3 to 8), which can be used as-is for regression, or categorized (e.g., low, medium, high) and label encoded if using classification models.
+The target column quality is ordinal (integer scores from 3 to 8), which can be: used as-is for regression, or categorized (e.g., low, medium, high) and label encoded if using classification models.
 
 Hence, no categorical encoding (e.g., One-Hot) was performed.
 
 Feature Scaling for Numerical Columns
-All numerical features (excluding quality) were standardized using StandardScaler.
-
-This transformed them to have: Mean = 0 and Standard Deviation = 1.
+All numerical features (excluding quality) were standardized using StandardScaler, which transformed them to have: Mean = 0 and Standard Deviation = 1.
 
 This scaling step was crucial because the dataset includes features with vastly different ranges (e.g., residual sugar vs pH vs alcohol), and unscaled features could bias model learning.
 
@@ -151,9 +168,7 @@ Box plots provided a visual summary of the distribution's spread, median, quarti
 
 Observations:
 
-Several features contain outliers, especially: residual sugar , free sulfur dioxide , and total sulfur dioxide.
-
-
+Several features contain outliers, especially: residual sugar, free sulfur dioxide, and total sulfur dioxide.
 
 Correlation Matrix Heatmap
 A heatmap was generated to visualize the linear relationships between numerical features.
